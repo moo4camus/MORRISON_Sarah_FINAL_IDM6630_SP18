@@ -16,6 +16,8 @@ if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $ge
         the_post_thumbnail();
         the_title('<h2>','</h2>');
      ?></a>
+     <p><?php the_field('weight'); ?></p>
+     <p><?php the_field('price'); ?></p>
   </div>
 
 <?php endwhile; else : ?>
