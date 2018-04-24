@@ -14,6 +14,7 @@
   register_post_type( 'product', $args );
   }
 
+
   add_action( 'init', 'create_product_post_type');
   add_theme_support('post-thumbnails');
   add_action('wp_enqueue_scripts', 'loadCSS');
@@ -30,4 +31,11 @@
       return $classes;
       }
   add_filter('show_admin_bar', '__return_false');
+
+  function remove_img_attr ($html)
+{
+    return preg_replace('/(width|height)="\d+"\s/', "", $html);
+}
+
+add_filter( 'post_thumbnail_html', 'remove_img_attr' );
  ?>

@@ -13,7 +13,7 @@ if ( $get_products->have_posts() ) : while ( $get_products->have_posts() ) : $ge
   <div class="title">
     <a href='<?php the_permalink(); ?>'>
       <?php
-        the_post_thumbnail();
+        the_post_thumbnail('medium');
         the_title('<h2>','</h2>');
      ?></a>
      <p><?php the_field('weight'); ?></p>

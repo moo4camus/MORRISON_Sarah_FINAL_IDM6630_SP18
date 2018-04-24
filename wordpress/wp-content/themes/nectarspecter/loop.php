@@ -7,8 +7,15 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       <?php
         the_post_thumbnail();
         the_title('<h2>','</h2>');
-     ?></a>
+      ?></a>
+
+      <?php
+        the_content('<p>','</p>');
+     ?>
   </div>
+
+  <?php
+    the_content(); ?>
 
   <div <?php body_class(); ?>>
     <?php

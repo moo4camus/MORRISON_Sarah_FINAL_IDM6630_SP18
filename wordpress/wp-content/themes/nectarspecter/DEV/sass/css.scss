@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Raleway");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 h3 {
   color: blue;
+}
+
+p {
+  color: red;
+}
+
+.page-wrap {
+  width: 100%;
+  padding: 4em 0 0;
+  margin: 4em 0;
+  background-color: #000000;
+  display: fixed;
+}
+
+body {
+  background-color: #fff;
+  max-width: 100%;
+}
+
+main {
+  background-image: url("../images/comb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.logo img {
+  display: block;
+  width: 45%;
+  height: 45%;
+  margin: auto;
+}
+
+.nav {
+  font-family: "Raleway", sans-serif;
+  background-color: #000000;
+  color: #fff;
+  font-weight: normal;
+}
+
+.nav ul {
+  padding-top: 2em;
+  display: block;
+  text-align: center;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2.5em;
+  padding: 0.75em 0em;
+}
+
+.nav a {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.7rem;
+  text-decoration: none;
+}
+
+img.product {
+  width: 30%;
 }
